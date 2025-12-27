@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="appGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#50C878;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3FAF6C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="scannerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EE5A5A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="immunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD93D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F4C430;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="integrationGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9B59B6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8E44AD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="reportGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498DB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980B9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="1000" fill="#F5F7FA"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#2C3E50">
+    AI Cybersecurity Platform Architecture
+  </text>
+  <text x="700" y="65" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#7F8C8D">
+    Unified Platform for Automated Cybersecurity Vulnerability Assessment
+  </text>
+  
+  <!-- USER INTERFACE LAYER -->
+  <rect x="50" y="100" width="300" height="120" rx="10" fill="url(#userGrad)" filter="url(#shadow)"/>
+  <text x="200" y="130" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    User Interface Layer
+  </text>
+  
+  <!-- GUI -->
+  <rect x="70" y="150" width="120" height="50" rx="5" fill="white" opacity="0.9"/>
+  <text x="130" y="175" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2C3E50">GUI</text>
+  <text x="130" y="190" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7F8C8D">(Tkinter)</text>
+  
+  <!-- CLI -->
+  <rect x="210" y="150" width="120" height="50" rx="5" fill="white" opacity="0.9"/>
+  <text x="270" y="175" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2C3E50">CLI</text>
+  <text x="270" y="190" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7F8C8D">(Typer + Rich)</text>
+  
+  <!-- Arrow from UI to Application -->
+  <path d="M 350 160 L 450 160" stroke="#34495E" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- APPLICATION LAYER -->
+  <rect x="450" y="100" width="200" height="120" rx="10" fill="url(#appGrad)" filter="url(#shadow)"/>
+  <text x="550" y="130" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    Application Layer
+  </text>
+  <rect x="470" y="150" width="160" height="50" rx="5" fill="white" opacity="0.9"/>
+  <text x="550" y="175" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2C3E50">Main Application</text>
+  <text x="550" y="190" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7F8C8D">(main.py)</text>
+  
+  <!-- Arrow from Application to Scanners -->
+  <path d="M 550 220 L 550 280" stroke="#34495E" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- CORE SCANNERS LAYER -->
+  <rect x="200" y="280" width="700" height="180" rx="10" fill="url(#scannerGrad)" filter="url(#shadow)"/>
+  <text x="550" y="310" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    Core Scanners
+  </text>
+  
+  <!-- ML Scanner -->
+  <rect x="230" y="330" width="300" height="110" rx="5" fill="white" opacity="0.95"/>
+  <text x="380" y="355" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2C3E50">ML Scanner</text>
+  <text x="250" y="375" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Pickle/Joblib Detection</text>
+  <text x="250" y="390" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Malicious Payload Scan</text>
+  <text x="250" y="405" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Adversarial Robustness</text>
+  <text x="250" y="420" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Framework Detection</text>
+  
+  <!-- Agent Scanner -->
+  <rect x="570" y="330" width="300" height="110" rx="5" fill="white" opacity="0.95"/>
+  <text x="720" y="355" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2C3E50">Agent Scanner</text>
+  <text x="590" y="375" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Prompt Injection Detection</text>
+  <text x="590" y="390" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Code Execution Analysis</text>
+  <text x="590" y="405" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Authorization Checking</text>
+  <text x="590" y="420" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Goal Manipulation</text>
+  
+  <!-- Arrows from Scanners to Integration -->
+  <path d="M 380 440 L 380 500" stroke="#34495E" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 720 440 L 720 500" stroke="#34495E" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- INTEGRATION LAYER -->
+  <rect x="100" y="500" width="900" height="220" rx="10" fill="url(#integrationGrad)" filter="url(#shadow)"/>
+  <text x="550" y="530" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    Integration Layer
+  </text>
+  
+  <!-- Left Column -->
+  <rect x="130" y="550" width="200" height="150" rx="5" fill="white" opacity="0.95"/>
+  <text x="230" y="575" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2C3E50">Adversarial Testing</text>
+  <text x="150" y="595" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Foolbox</text>
+  <text x="150" y="610" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• CleverHans</text>
+  <text x="150" y="625" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• FGSM, PGD, C&amp;W</text>
+  <text x="150" y="640" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• DeepFool</text>
+  <text x="150" y="655" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Ensemble Defense</text>
+  <text x="150" y="670" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Robustness Metrics</text>
+  <text x="150" y="685" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Attack Success Rate</text>
+  
+  <!-- Middle Left Column -->
+  <rect x="360" y="550" width="200" height="150" rx="5" fill="white" opacity="0.95"/>
+  <text x="460" y="575" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2C3E50">Security Analysis</text>
+  <text x="380" y="595" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Prompt Injection</text>
+  <text x="380" y="610" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Code Execution</text>
+  <text x="380" y="625" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Authorization</text>
+  <text x="380" y="640" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Identity Verification</text>
+  <text x="380" y="655" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Goal Manipulation</text>
+  <text x="380" y="670" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Communication Security</text>
+  <text x="380" y="685" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Resource Management</text>
+  
+  <!-- Middle Right Column -->
+  <rect x="590" y="550" width="200" height="150" rx="5" fill="white" opacity="0.95"/>
+  <text x="690" y="575" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2C3E50">Framework &amp; CVE</text>
+  <text x="610" y="595" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Framework Detection</text>
+  <text x="610" y="610" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• TensorFlow</text>
+  <text x="610" y="625" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• PyTorch</text>
+  <text x="610" y="640" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Scikit-learn</text>
+  <text x="610" y="655" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• CVE Database</text>
+  <text x="610" y="670" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Vulnerability Lookup</text>
+  <text x="610" y="685" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Supply Chain Scan</text>
+  
+  <!-- Right Column -->
+  <rect x="820" y="550" width="150" height="150" rx="5" fill="white" opacity="0.95"/>
+  <text x="895" y="575" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2C3E50">Input Validation</text>
+  <text x="840" y="595" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Pattern Detection</text>
+  <text x="840" y="610" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Injection Detection</text>
+  <text x="840" y="625" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Evasion Detection</text>
+  <text x="840" y="640" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• Anomaly Detection</text>
+  <text x="840" y="655" font-family="Arial, sans-serif" font-size="10" fill="#34495E">• History Analysis</text>
+  
+  <!-- Arrows from Integration to Immunization -->
+  <path d="M 550 720 L 550 780" stroke="#34495E" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- IMMUNIZATION LAYER -->
+  <rect x="200" y="780" width="700" height="140" rx="10" fill="url(#immunGrad)" filter="url(#shadow)"/>
+  <text x="550" y="810" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    Model Immunization Module
+  </text>
+  
+  <!-- Immunization Components -->
+  <rect x="230" y="830" width="150" height="70" rx="5" fill="white" opacity="0.95"/>
+  <text x="305" y="855" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2C3E50">Adversarial Training</text>
+  <text x="250" y="875" font-family="Arial, sans-serif" font-size="9" fill="#34495E">FGSM, PGD, C&amp;W</text>
+  <text x="250" y="890" font-family="Arial, sans-serif" font-size="9" fill="#34495E">DeepFool, Ensemble</text>
+  
+  <rect x="400" y="830" width="150" height="70" rx="5" fill="white" opacity="0.95"/>
+  <text x="475" y="855" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2C3E50">Encryption</text>
+  <text x="420" y="875" font-family="Arial, sans-serif" font-size="9" fill="#34495E">AES-256</text>
+  <text x="420" y="890" font-family="Arial, sans-serif" font-size="9" fill="#34495E">PBKDF2, SHA-256</text>
+  
+  <rect x="570" y="830" width="150" height="70" rx="5" fill="white" opacity="0.95"/>
+  <text x="645" y="855" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2C3E50">Secure Serialization</text>
+  <text x="590" y="875" font-family="Arial, sans-serif" font-size="9" fill="#34495E">HMAC, Checksums</text>
+  <text x="590" y="890" font-family="Arial, sans-serif" font-size="9" fill="#34495E">Tamper Detection</text>
+  
+  <rect x="740" y="830" width="150" height="70" rx="5" fill="white" opacity="0.95"/>
+  <text x="815" y="855" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2C3E50">Differential Privacy</text>
+  <text x="760" y="875" font-family="Arial, sans-serif" font-size="9" fill="#34495E">Laplace, Gaussian</text>
+  <text x="760" y="890" font-family="Arial, sans-serif" font-size="9" fill="#34495E">Exponential Mechanism</text>
+  
+  <!-- Arrow from Immunization to Reporting -->
+  <path d="M 550 920 L 550 960" stroke="#34495E" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- REPORTING LAYER -->
+  <rect x="450" y="960" width="200" height="30" rx="10" fill="url(#reportGrad)" filter="url(#shadow)"/>
+  <text x="550" y="980" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    Reporting Engine (HTML, JSON, Text)
+  </text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#34495E"/>
+    </marker>
+  </defs>
+  
+  <!-- Data Flow Labels -->
+  <text x="350" y="175" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7F8C8D">Input Files</text>
+  <text x="550" y="250" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7F8C8D">Scan Request</text>
+  <text x="380" y="470" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7F8C8D">Vulnerabilities</text>
+  <text x="720" y="470" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7F8C8D">Vulnerabilities</text>
+  <text x="550" y="750" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7F8C8D">Protection Methods</text>
+  <text x="550" y="940" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7F8C8D">Reports</text>
+  
+  <!-- Legend -->
+  <rect x="1050" y="100" width="320" height="280" rx="10" fill="white" stroke="#BDC3C7" stroke-width="2" opacity="0.95"/>
+  <text x="1210" y="130" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2C3E50">Legend</text>
+  
+  <rect x="1070" y="150" width="20" height="15" fill="url(#userGrad)"/>
+  <text x="1100" y="162" font-family="Arial, sans-serif" font-size="11" fill="#34495E">User Interface</text>
+  
+  <rect x="1070" y="175" width="20" height="15" fill="url(#appGrad)"/>
+  <text x="1100" y="187" font-family="Arial, sans-serif" font-size="11" fill="#34495E">Application Core</text>
+  
+  <rect x="1070" y="200" width="20" height="15" fill="url(#scannerGrad)"/>
+  <text x="1100" y="212" font-family="Arial, sans-serif" font-size="11" fill="#34495E">Vulnerability Scanners</text>
+  
+  <rect x="1070" y="225" width="20" height="15" fill="url(#integrationGrad)"/>
+  <text x="1100" y="237" font-family="Arial, sans-serif" font-size="11" fill="#34495E">Integration Services</text>
+  
+  <rect x="1070" y="250" width="20" height="15" fill="url(#immunGrad)"/>
+  <text x="1100" y="262" font-family="Arial, sans-serif" font-size="11" fill="#34495E">Immunization</text>
+  
+  <rect x="1070" y="275" width="20" height="15" fill="url(#reportGrad)"/>
+  <text x="1100" y="287" font-family="Arial, sans-serif" font-size="11" fill="#34495E">Reporting</text>
+  
+  <rect x="1070" y="300" width="20" height="15" fill="none" stroke="#34495E" stroke-width="2"/>
+  <text x="1100" y="312" font-family="Arial, sans-serif" font-size="11" fill="#34495E">Data Flow</text>
+  
+  <!-- Footer -->
+  <text x="700" y="990" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#95A5A6">
+    AI Cybersecurity Platform v2.0 - Enhanced Edition | Mohamed Massaoudi, PhD | Texas A&amp;M University
+  </text>
+</svg>
+
