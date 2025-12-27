@@ -270,14 +270,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Authors
 
 - **Mohamed Massaoudi, PhD** - *Lead Developer* - [Email](mailto:mohamed.massaoudi@tamu.edu)
-- **Katherine R. Davis** - *Principal Investigator*
+- **Maymouna Ez Eddin** - *Developer*
 
 *Department of Electrical and Computer Engineering*  
 *Texas A&M University, College Station, USA*
 
 ## 🙏 Acknowledgments
 
-- US Department of Energy (Award DE‐CR0000018)
 - Texas A&M University
 - Open source security community
 - Beta testers and early adopters
@@ -302,4 +301,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **⚠️ Security Notice**: This tool is designed to help identify security vulnerabilities. Always verify findings manually and follow responsible disclosure practices when reporting vulnerabilities in third-party systems.
+
 
