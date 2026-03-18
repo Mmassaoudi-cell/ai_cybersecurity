@@ -1,4 +1,4 @@
-# 🛡️ AI Cybersecurity Platform
+# 🛡️ AIProbe: AI Cybersecurity Platform
 
 **A Unified Platform for Automated Cybersecurity Vulnerability Assessment in Machine Learning Models and AI Agents**
 
@@ -9,7 +9,7 @@
 
 ## 📋 Overview
 
-The AI Cybersecurity Platform is a comprehensive tool designed to identify and assess cybersecurity vulnerabilities in Machine Learning models and AI agents. Developed by researchers at Texas A&M University, this platform addresses the growing need for automated security assessment in AI systems.
+The AIProbe Platform is a comprehensive tool designed to identify and assess cybersecurity vulnerabilities in Machine Learning models and AI agents. Developed by researchers at Texas A&M University, this platform addresses the growing need for automated security assessment in AI systems.
 
 ### 🎯 Key Features
 
@@ -168,7 +168,7 @@ The platform generates comprehensive reports with:
 The platform is built with a modular, layered architecture:
 
 ```
-AI Cybersecurity Platform
+AIProbe Platform
 ├── User Interface Layer
 │   ├── GUI Application (Tkinter)
 │   └── CLI Interface (Typer + Rich)
