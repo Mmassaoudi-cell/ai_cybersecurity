@@ -1,0 +1,238 @@
+[
+  {
+    "file": "benchmark_agents/atlas_prompt_injection.py",
+    "atlas_id": "AML.T0051",
+    "atlas_name": "LLM Prompt Injection",
+    "scan_type": "Agent",
+    "is_clean": false,
+    "total_vulns": 5,
+    "true_positives": 1,
+    "false_positives": 4,
+    "detected": true,
+    "elapsed_s": 0.0,
+    "severity": {
+      "high": 4,
+      "critical": 1
+    },
+    "vuln_titles": [
+      "Prompt Injection Vulnerability",
+      "Unsafe Code Execution",
+      "Missing Authorization Controls",
+      "Weak Agent Identity Verification",
+      "Goal Manipulation Vulnerability"
+    ]
+  },
+  {
+    "file": "benchmark_agents/atlas_unsafe_code_exec.py",
+    "atlas_id": "AML.T0048",
+    "atlas_name": "Command and Scripting \u2014 Unsafe Code Execution",
+    "scan_type": "Agent",
+    "is_clean": false,
+    "total_vulns": 4,
+    "true_positives": 1,
+    "false_positives": 3,
+    "detected": true,
+    "elapsed_s": 0.0,
+    "severity": {
+      "high": 3,
+      "critical": 1
+    },
+    "vuln_titles": [
+      "Prompt Injection Vulnerability",
+      "Unsafe Code Execution",
+      "Missing Authorization Controls",
+      "Weak Agent Identity Verification"
+    ]
+  },
+  {
+    "file": "benchmark_agents/atlas_goal_hijacking.py",
+    "atlas_id": "AML.T0054",
+    "atlas_name": "LLM Goal Hijacking / Goal Manipulation",
+    "scan_type": "Agent",
+    "is_clean": false,
+    "total_vulns": 5,
+    "true_positives": 1,
+    "false_positives": 4,
+    "detected": true,
+    "elapsed_s": 0.0,
+    "severity": {
+      "high": 4,
+      "critical": 1
+    },
+    "vuln_titles": [
+      "Prompt Injection Vulnerability",
+      "Unsafe Code Execution",
+      "Missing Authorization Controls",
+      "Weak Agent Identity Verification",
+      "Goal Manipulation Vulnerability"
+    ]
+  },
+  {
+    "file": "benchmark_agents/atlas_supply_chain.py",
+    "atlas_id": "AML.T0010",
+    "atlas_name": "ML Supply Chain Compromise",
+    "scan_type": "Agent",
+    "is_clean": false,
+    "total_vulns": 4,
+    "true_positives": 1,
+    "false_positives": 3,
+    "detected": true,
+    "elapsed_s": 0.0,
+    "severity": {
+      "critical": 1,
+      "high": 3
+    },
+    "vuln_titles": [
+      "Unsafe Code Execution",
+      "Missing Authorization Controls",
+      "Weak Agent Identity Verification",
+      "Supply Chain Vulnerabilities"
+    ]
+  },
+  {
+    "file": "benchmark_agents/atlas_no_auth.py",
+    "atlas_id": "AML.T0040",
+    "atlas_name": "ML Model Access \u2014 Missing Authorization",
+    "scan_type": "Agent",
+    "is_clean": false,
+    "total_vulns": 3,
+    "true_positives": 2,
+    "false_positives": 1,
+    "detected": true,
+    "elapsed_s": 0.0,
+    "severity": {
+      "high": 3
+    },
+    "vuln_titles": [
+      "Prompt Injection Vulnerability",
+      "Missing Authorization Controls",
+      "Weak Agent Identity Verification"
+    ]
+  },
+  {
+    "file": "benchmark_agents/atlas_inter_agent_comms.py",
+    "atlas_id": "AML.T0049",
+    "atlas_name": "Insecure Inter-Agent Communication",
+    "scan_type": "Agent",
+    "is_clean": false,
+    "total_vulns": 4,
+    "true_positives": 1,
+    "false_positives": 3,
+    "detected": true,
+    "elapsed_s": 0.0,
+    "severity": {
+      "critical": 1,
+      "high": 3
+    },
+    "vuln_titles": [
+      "Unsafe Code Execution",
+      "Missing Authorization Controls",
+      "Weak Agent Identity Verification",
+      "Supply Chain Vulnerabilities"
+    ]
+  },
+  {
+    "file": "benchmark_agents/clean_agent.py",
+    "atlas_id": "N/A",
+    "atlas_name": "Benign Agent (FP Baseline)",
+    "scan_type": "Agent",
+    "is_clean": true,
+    "total_vulns": 1,
+    "true_positives": 0,
+    "false_positives": 1,
+    "detected": true,
+    "elapsed_s": 0.0,
+    "severity": {
+      "high": 1
+    },
+    "vuln_titles": [
+      "Prompt Injection Vulnerability"
+    ]
+  },
+  {
+    "file": "C:\\Users\\MMASSAOUDI\\Desktop\\research work\\Alienware\\finilized documents\\A_Unified_Platform_for_Automated_Cybersecurity_Vulnerability_Assessment_in_Machine_Learning_Models_and_AI_Agents 1\\plateform\\malicious_model.pkl",
+    "atlas_id": "AML.T0010",
+    "atlas_name": "ML Supply Chain \u2014 Insecure Serialization",
+    "scan_type": "ML",
+    "is_clean": false,
+    "total_vulns": 5,
+    "true_positives": 2,
+    "false_positives": 3,
+    "detected": true,
+    "elapsed_s": 0.0,
+    "severity": {
+      "high": 1,
+      "critical": 1,
+      "medium": 2,
+      "low": 1
+    },
+    "vuln_titles": [
+      "Insecure Serialization",
+      "Malicious Payload Detected",
+      "Missing Explainability",
+      "Insecure File Permissions",
+      "Missing Model Metadata"
+    ]
+  },
+  {
+    "file": "C:\\Users\\MMASSAOUDI\\Desktop\\research work\\Alienware\\finilized documents\\A_Unified_Platform_for_Automated_Cybersecurity_Vulnerability_Assessment_in_Machine_Learning_Models_and_AI_Agents 1\\plateform\\my_classifier.pkl",
+    "atlas_id": "AML.T0010",
+    "atlas_name": "ML Supply Chain \u2014 Pickle Model",
+    "scan_type": "ML",
+    "is_clean": false,
+    "total_vulns": 3,
+    "true_positives": 1,
+    "false_positives": 2,
+    "detected": true,
+    "elapsed_s": 0.9,
+    "severity": {
+      "high": 2,
+      "medium": 1
+    },
+    "vuln_titles": [
+      "Insecure Serialization",
+      "Adversarial Vulnerability (Foolbox)",
+      "Insecure File Permissions"
+    ]
+  },
+  {
+    "file": "C:\\Users\\MMASSAOUDI\\Desktop\\research work\\Alienware\\finilized documents\\A_Unified_Platform_for_Automated_Cybersecurity_Vulnerability_Assessment_in_Machine_Learning_Models_and_AI_Agents 1\\plateform\\my_classifier.joblib",
+    "atlas_id": "AML.T0010",
+    "atlas_name": "ML Supply Chain \u2014 Joblib Model",
+    "scan_type": "ML",
+    "is_clean": false,
+    "total_vulns": 3,
+    "true_positives": 1,
+    "false_positives": 2,
+    "detected": true,
+    "elapsed_s": 0.02,
+    "severity": {
+      "high": 2,
+      "medium": 1
+    },
+    "vuln_titles": [
+      "Insecure Serialization",
+      "Adversarial Vulnerability (Foolbox)",
+      "Insecure File Permissions"
+    ]
+  },
+  {
+    "file": "C:\\Users\\MMASSAOUDI\\Desktop\\research work\\Alienware\\finilized documents\\A_Unified_Platform_for_Automated_Cybersecurity_Vulnerability_Assessment_in_Machine_Learning_Models_and_AI_Agents 1\\Code\\ai_cybersecurity-main Github\\evaluation\\benchmark_models\\benign_model.json",
+    "atlas_id": "N/A",
+    "atlas_name": "Benign JSON Model (FP Baseline)",
+    "scan_type": "ML",
+    "is_clean": true,
+    "total_vulns": 2,
+    "true_positives": 0,
+    "false_positives": 2,
+    "detected": true,
+    "elapsed_s": 0.0,
+    "severity": {
+      "medium": 2
+    },
+    "vuln_titles": [
+      "Missing Explainability",
+      "Insecure File Permissions"
+    ]
+  }
+]
